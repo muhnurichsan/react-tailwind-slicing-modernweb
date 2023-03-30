@@ -1,10 +1,26 @@
 import { useState } from "react";
 import { houses } from "../constants";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, EffectCards } from "swiper";
+import { Navigation } from "swiper";
+import { useMediaQuery } from "react-responsive";
 
 export default function FeaturedHouse() {
   const [active, setActive] = useState("house");
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 1224px)",
+  });
+  const isMobile = useMediaQuery({ maxWidth: 680 });
+
+  const handleSlidePerView = () => {
+    if (isDesktopOrLaptop) {
+      return 4;
+    } else if (isMobile) {
+      return 1;
+    } else {
+      return 2;
+    }
+  };
+
   return (
     <section className="px-10 xl:px-28 mt-28 min-h-[20vh] pb-10">
       <h6 className="text-secondary flex items-center gap-2 ">
@@ -76,27 +92,10 @@ export default function FeaturedHouse() {
             />
           </ul>
         </div>
-        <div className="pt-4 hidden md:flex">
+        <div className="pt-4 flex">
           <Swiper
+            slidesPerView={handleSlidePerView()}
             spaceBetween={10}
-            slidesPerView={4}
-            navigation={true}
-            modules={[Navigation]}
-          >
-            {houses.map((item, index) => {
-              return (
-                <SwiperSlide>
-                  <CardFeaturedHouse key={index} {...item} />
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-        </div>
-        <div className="pt-4 block md:hidden text-black">
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={1}
-            cssMode={true}
             navigation={true}
             modules={[Navigation]}
             className="mySwiper"

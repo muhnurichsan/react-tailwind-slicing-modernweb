@@ -17,7 +17,7 @@ export default function Hero() {
           <span className="text-stroke font-normal"> your dreams</span> easily
           here
         </h1>
-        <p className="text-gray-500 text-center xl:text-star">
+        <p className="text-gray-500 text-center xl:text-start">
           {" "}
           Everything you need about finding your place to live will be here,
           where it will be easier for you
@@ -30,7 +30,7 @@ export default function Hero() {
           <input
             type="text"
             placeholder="Search for the location you want!"
-            className="w-full xl:w-[65%] border-none outline-none text-lg placeholder:text-[10px]  placeholder:xl:text-base"
+            className="w-full xl:w-[65%] border-none outline-none text-lg placeholder:text-[10px]  placeholder:xl:text-base text-black bg-transparent"
           />
           <button className="text-white text-[10px] xl:text-base items-center  mr-1 px-4 py-2 xl:px-5 xl:py-3 rounded-3xl cursor-pointer bg-primary font-semibold flex">
             Search <img src={arrowR} alt="arrowR" className="w-4 xl:w-full" />
