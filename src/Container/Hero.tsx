@@ -40,7 +40,7 @@ export default function Hero() {
 
         {/* Our Partner */}
         <div className="flex flex-col text-center xl:text-start">
-          <p>Our Partnership</p>
+          <p className="text-gray-500">Our Partnership</p>
           <div className="flex gap-9 flex-row justify-center flex-wrap xl:flex-nowrap xl:justify-normal">
             <img
               src={traveloka}

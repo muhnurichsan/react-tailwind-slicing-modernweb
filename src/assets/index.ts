@@ -24,6 +24,15 @@ import person2 from "./person2.png";
 import person3 from "./person3.png";
 import person4 from "./person4.png";
 import antfire from "./ant-fire.svg";
+import bed from "./bed.svg";
+import garage from "./garage.svg";
+import shower from "./shower.svg";
+import stairs from "./stairs.svg";
+import call from "./call.svg";
+import ready1 from "./Ready1.png";
+import ready2 from "./Ready2.png";
+import ready3 from "./Ready3.png";
+import ready4 from "./Ready4.png";
 
 export {
   logo,
@@ -52,4 +61,13 @@ export {
   person3,
   person4,
   antfire,
+  bed,
+  stairs,
+  shower,
+  garage,
+  call,
+  ready1,
+  ready2,
+  ready3,
+  ready4,
 };

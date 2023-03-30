@@ -17,7 +17,7 @@ export default function Navbar() {
       </div>
       <ul className="xl:flex hidden gap-4">
         <li className="px-4 py-2 border-2 rounded-3xl cursor-pointer ">
-          About Us
+          <a href="#hero">About Us</a>
         </li>
         <li className="px-4 py-2 border-2 rounded-3xl cursor-pointer ">
           Article

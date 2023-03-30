@@ -27,7 +27,7 @@ export default function FeaturedHouse() {
         {" "}
         <span className="w-10 h-[2px] bg-secondary"></span> Our Recommendation
       </h6>
-      <div className="flex flex-col gap-4 pl-4 xl:pl-12">
+      <div id="hero" className="flex flex-col gap-4 pl-4 xl:pl-12">
         <div className="flex justify-between items-center flex-wrap gap-4 lg:gap-0">
           <h3 className="text-blue-950 text-3xl font-semibold">
             Featured House
@@ -133,7 +133,7 @@ interface CardFeatureHouseProps {
 }
 const CardFeaturedHouse = (props: CardFeatureHouseProps) => {
   return (
-    <div className="card relative flex flex-col gap-5">
+    <div className="card relative flex flex-col gap-5 cursor-pointer">
       <div
         className={`badge absolute px-4 py-2 flex gap-2 items-center font-medium rounded-3xl ${props.badge.background} top-[21rem] left-5 text-[12px] ${props.badge.color}`}
       >

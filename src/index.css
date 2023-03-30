@@ -3,6 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scroll-behavior: smooth;
+}
 :root {
   font-family: "Lexend", sans-serif;
   line-height: 1.5;
