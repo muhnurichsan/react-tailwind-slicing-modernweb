@@ -14,7 +14,7 @@ import {
 export default function ReadyHouse() {
   return (
     <div
-      className="px-10 xl:px-28 mt-28 min-h-[20vh] pb-10
+      className="px-10 xl:px-28 mt-28 min-h-[20vh] pb-10 relative
     "
     >
       <h6 className="text-secondary flex items-center gap-2 ">
@@ -59,10 +59,10 @@ export default function ReadyHouse() {
             </button>
           </div>
         </div>
-        <div className="right-ready grid w-full lg:w-1/2 grid-rows-2 grid-flow-col gap-3">
+        <div className="right-ready grid w-full lg:w-1/2 grid-rows-2 grid-flow-col gap-2">
           <img src={ready1} alt="" className="w-[20rem] h-[10rem] rounded-xl" />
-          <img src={ready2} alt="" className="w-[20rem] h-[10rem] rounded-xl" />
           <img src={ready3} alt="" className="w-[20rem] h-[10rem] rounded-xl" />
+          <img src={ready2} alt="" className="w-[20rem] h-[10rem] rounded-xl" />
           <img src={ready4} alt="" className="w-[20rem] h-[10rem] rounded-xl" />
         </div>
       </div>
