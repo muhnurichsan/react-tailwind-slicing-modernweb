@@ -1,9 +1,16 @@
-import heroR from "../assets/hero-right.png";
-import location from "../assets/location-icon.svg";
-import arrowR from "../assets/arrow-right.svg";
+import {
+  airbnb,
+  arrowR,
+  heroR,
+  location,
+  tiket,
+  traveloka,
+  triadvisor,
+} from "../assets";
+
 export default function Hero() {
   return (
-    <section className="text-black xl:pl-28 flex justify-between xl:flex-row flex-col xl:gap-0 gap-10">
+    <section className="xl:pl-28 flex justify-between xl:flex-row flex-col xl:gap-0 gap-10 relative">
       <div className="left-hero mt-52 xl:w-1/3 w-full flex gap-8 flex-col sm:mx-0 px-10">
         <h1 className="uppercase font-semibold text-5xl text-blue-950 text-center xl:text-start">
           find the place to live
@@ -29,6 +36,27 @@ export default function Hero() {
             Search <img src={arrowR} alt="arrowR" className="w-4 xl:w-full" />
           </button>
         </div>
+        {/* End Search Input */}
+
+        {/* Our Partner */}
+        <div className="flex flex-col text-center xl:text-start">
+          <p>Our Partnership</p>
+          <div className="flex gap-9 flex-row justify-center flex-wrap xl:flex-nowrap xl:justify-normal">
+            <img
+              src={traveloka}
+              alt="traveloka"
+              className=" w-24 sm:w-30 h-20"
+            />
+            <img src={tiket} alt="traveloka" className=" w-24 sm:w-30 h-20" />
+            <img src={airbnb} alt="traveloka" className=" w-24 sm:w-30 h-20" />
+            <img
+              src={triadvisor}
+              alt="traveloka"
+              className=" w-24 sm:w-30 h-20"
+            />
+          </div>
+        </div>
+        {/* End Our Partner */}
       </div>
       <div className="right-hero">
         <img

@@ -8,6 +8,7 @@ export default {
         secondary: "#F59E0B",
         tertiary: "#047857",
         greeny: "#D1FAE5",
+        reddy: "#FEE2E2",
       },
     },
   },
