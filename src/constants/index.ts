@@ -79,7 +79,24 @@ const houses = [
     owner: {
       name: "Jenny Wilson",
       image: person4,
-      place: "Preston Rd. Inglewood, Maine 98380",
+      place: "Preston Rd. Inglewood",
+    },
+  },
+  {
+    id: "5",
+    name: "Cosmo's House",
+    price: "22.000.000",
+    image: card4,
+    badge: {
+      name: "Popular",
+      color: "text-red-500",
+      background: "bg-reddy",
+      icon: antfire,
+    },
+    owner: {
+      name: "Jenny Wilson",
+      image: person4,
+      place: "Preston Rd. Inglewood",
     },
   },
 ];
