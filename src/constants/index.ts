@@ -1,5 +1,8 @@
 import {
   antfire,
+  article1,
+  article2,
+  article3,
   card1,
   card2,
   card3,
@@ -171,4 +174,63 @@ const reviews = [
   },
 ];
 
-export { houses, reviews };
+const articles = [
+  {
+    id: "1",
+    image: article1,
+    title: "The things we need to check when we want to buy a house",
+    content: "asdasd",
+    created: "4 min read | 25 Apr 2021",
+    user: {
+      name: "Dianne Russell",
+      image: person1,
+    },
+  },
+  {
+    id: "2",
+    image: article2,
+    title: "7 Ways to distinguish the quality of the house we want to buy",
+    content: "asdasd",
+    created: "6 min read | 24 Apr 2021",
+    user: {
+      name: "Courtney Henry",
+      image: person2,
+    },
+  },
+  {
+    id: "3",
+    image: article3,
+    title: "The best way to know the quality of the house we want to buy",
+    content: "asdasd",
+    created: "2 min read | 26 Apr 2021",
+    user: {
+      name: "Darlene Robertson",
+      image: person4,
+    },
+  },
+  {
+    id: "4",
+    image: review2,
+    title: "12 Things to know before buying a house",
+    content:
+      "Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house",
+    created: "9 min read | 24 Apr 2021",
+    user: {
+      name: "Cameron Williamson",
+      image: person3,
+    },
+  },
+  {
+    id: "5",
+    image: article3,
+    title: "The best way to know the quality of the house we want to buy",
+    content: "asdasd",
+    created: "2 min read | 26 Apr 2021",
+    user: {
+      name: "Darlene Robertson",
+      image: person4,
+    },
+  },
+];
+
+export { houses, reviews, articles };

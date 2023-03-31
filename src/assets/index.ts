@@ -36,6 +36,10 @@ import ready4 from "./Ready4.png";
 import review1 from "./review1.png";
 import review2 from "./review2.png";
 import star from "./star.svg";
+import article1 from "./article-1.png";
+import article2 from "./article-2.png";
+import article3 from "./article-3.png";
+import clock from "./clock.svg";
 
 export {
   logo,
@@ -76,4 +80,8 @@ export {
   review1,
   star,
   review2,
+  article1,
+  article2,
+  article3,
+  clock,
 };

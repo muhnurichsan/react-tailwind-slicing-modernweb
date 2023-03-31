@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { person1, review1, star } from "../assets";
+import { star } from "../assets";
 import { FreeMode, Pagination } from "swiper";
 import { useMediaQuery } from "react-responsive";
 import { reviews } from "../constants";
@@ -15,10 +15,6 @@ export default function Review() {
   const isMobile = useMediaQuery({ maxWidth: 680 });
 
   const handleSlidePerView = () => {
-    console.log(isDesktopOrLaptop);
-    console.log(isTablet);
-    console.log(isMobile);
-
     if (isDesktopOrLaptop) {
       return 3;
     } else if (isTablet) {
@@ -46,13 +42,13 @@ export default function Review() {
       <h2 className="text-blue-950 font-semibold text-4xl text-center ">
         What Our User Say About Us
       </h2>
-      <div className="pt-2 w-full flex" onChange={() => handleSlidePerView()}>
+      <div className="pt-2 w-full flex">
         <Swiper
           slidesPerView={handleSlidePerView()}
-          loop={true}
           spaceBetween={handleSpace()}
           centeredSlides={true}
           freeMode={true}
+          loop={true}
           pagination={true}
           modules={[Pagination, FreeMode]}
           className="mySwiper"
@@ -90,7 +86,7 @@ const ReviewCard = (props: ReviewCardProps) => {
         <img
           src={props.image}
           alt="review1"
-          className="w-full h-full object-cover rounded-2xl"
+          className="w-full h-[10rem] sm:h-full object-cover rounded-2xl"
         />
       </div>
       <div className="px-6 py-6 mx-11 md:mx-24 lg:mx-16  w-[12rem] sm:w-[18rem] md:w-[20rem]  lg:w-[38rem] flex flex-col gap-5  rounded-2xl relative bottom-10 md:bottom-28  bg-white">

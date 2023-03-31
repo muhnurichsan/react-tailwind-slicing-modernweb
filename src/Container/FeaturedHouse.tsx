@@ -102,7 +102,7 @@ export default function FeaturedHouse() {
           >
             {houses.map((item, index) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide key={index}>
                   <CardFeaturedHouse key={index} {...item} />
                 </SwiperSlide>
               );
