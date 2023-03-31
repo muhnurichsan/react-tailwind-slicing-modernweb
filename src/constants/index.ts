@@ -9,6 +9,9 @@ import {
   person2,
   person3,
   person4,
+  ready1,
+  review1,
+  review2,
   wallet,
 } from "../assets";
 
@@ -100,5 +103,72 @@ const houses = [
     },
   },
 ];
+const reviews = [
+  {
+    id: "1",
+    title: "Best! I got the house I wanted through Hounter",
+    content:
+      "Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.",
+    image: review1,
+    rating: "4.0",
+    user: {
+      name: "Dianne Russell",
+      image: person1,
+      job: "Manager Director",
+    },
+  },
+  {
+    id: "2",
+    title: "Best! I got the house I wanted through Hounter",
+    content:
+      "Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.",
+    image: review2,
+    rating: "4.5",
+    user: {
+      name: "Robert Fox",
+      image: person2,
+      job: "IT Consultant",
+    },
+  },
+  {
+    id: "3",
+    title: "Best! I got the house I wanted through Hounter",
+    content:
+      "Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.",
+    image: ready1,
+    rating: "4.5",
+    user: {
+      name: "Ronald Richards",
+      image: person3,
+      job: "Dancer",
+    },
+  },
+  {
+    id: "4",
+    title: "Best! I got the house I wanted through Hounter",
+    content:
+      "Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.",
+    image: review2,
+    rating: "4.5",
+    user: {
+      name: "Robert Fox",
+      image: person2,
+      job: "IT Consultant",
+    },
+  },
+  {
+    id: "5",
+    title: "Best! I got the house I wanted through Hounter",
+    content:
+      "Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.",
+    image: ready1,
+    rating: "4.5",
+    user: {
+      name: "Ronald Richards",
+      image: person3,
+      job: "Dancer",
+    },
+  },
+];
 
-export { houses };
+export { houses, reviews };

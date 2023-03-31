@@ -33,6 +33,9 @@ import ready1 from "./Ready1.png";
 import ready2 from "./Ready2.png";
 import ready3 from "./Ready3.png";
 import ready4 from "./Ready4.png";
+import review1 from "./review1.png";
+import review2 from "./review2.png";
+import star from "./star.svg";
 
 export {
   logo,
@@ -70,4 +73,7 @@ export {
   ready2,
   ready3,
   ready4,
+  review1,
+  star,
+  review2,
 };

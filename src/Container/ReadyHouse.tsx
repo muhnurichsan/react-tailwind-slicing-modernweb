@@ -13,7 +13,7 @@ import {
 
 export default function ReadyHouse() {
   return (
-    <div
+    <section
       className="px-10 xl:px-28 mt-28 min-h-[20vh] pb-10 relative
     "
     >
@@ -66,6 +66,6 @@ export default function ReadyHouse() {
           <img src={ready4} alt="" className="w-[20rem] h-[10rem] rounded-xl" />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
