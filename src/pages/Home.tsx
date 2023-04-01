@@ -1,5 +1,11 @@
-import { FeaturedHouse, Hero, ReadyHouse, Review } from "../Container";
-import Article from "../Container/Article";
+import {
+  Article,
+  FeaturedHouse,
+  Hero,
+  ReadyHouse,
+  Review,
+  Subscribe,
+} from "../Container";
 import Navbar from "../components/Navbar";
 
 export default function Home() {
@@ -13,6 +19,7 @@ export default function Home() {
       <ReadyHouse></ReadyHouse>
       <Review></Review>
       <Article></Article>
+      <Subscribe></Subscribe>
     </div>
   );
 }

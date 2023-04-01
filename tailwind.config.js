@@ -10,6 +10,9 @@ export default {
         greeny: "#D1FAE5",
         reddy: "#FEE2E2",
       },
+      backgroundImage: {
+        subs: "url('/src/assets/bg-subs.png')",
+      },
     },
   },
   plugins: [],
