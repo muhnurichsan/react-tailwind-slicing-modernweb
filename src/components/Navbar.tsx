@@ -1,7 +1,4 @@
-import logo from "../assets/logo.png";
-import arrow from "../assets/arrow.svg";
-import menu from "../assets/menu.svg";
-import close from "../assets/close.svg";
+import { logo, arrow, menu, close } from "../assets";
 import { useState } from "react";
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);
@@ -25,9 +22,9 @@ export default function Navbar() {
         <li className="px-4 py-2 border-2 rounded-3xl cursor-pointer flex gap-2">
           Property <img src={arrow} alt="arrow" />
         </li>
-        <li className="px-6 py-3 ml-4 rounded-3xl text-tertiary cursor-pointer bg-greeny font-semibold">
+        <button className="px-6 py-3 ml-4 rounded-3xl text-tertiary cursor-pointer bg-greeny font-semibold">
           Sign Up!
-        </li>
+        </button>
       </ul>
 
       <div className="xl:hidden gap-4 flex relative">
@@ -42,12 +39,18 @@ export default function Navbar() {
           } w-40 h-52 py-2 px-5 rounded-3xl bg-primary border-2 absolute top-5 right-6`}
         >
           <ul className="flex-col flex gap-3 mt-5 items-start">
-            <li>About Us</li>
-            <li>Article</li>
-            <li>About Us</li>
-            <li className="px-3 py-2 rounded-3xl text-tertiary cursor-pointer bg-greeny font-semibold">
-              Sign Up!
+            <li>
+              <a href="#">About Us</a>
             </li>
+            <li>
+              <a href="#">Article</a>
+            </li>
+            <li>
+              <a href="#">Property</a>
+            </li>
+            <button className="px-3 py-2 rounded-3xl text-tertiary cursor-pointer bg-greeny font-semibold">
+              Sign Up!
+            </button>
           </ul>
         </div>
       </div>

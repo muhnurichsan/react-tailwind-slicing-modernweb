@@ -12,8 +12,8 @@ import {
 
 export default function Subscribe() {
   return (
-    <section className="px-10 xl:px-28 mb-10">
-      <div className="mx-auto flex flex-col lg:flex-row bg-subs w-full  xl:w-full 2xl:w-[70%] min-[2050px]:w-[50%] min-[2624px]:w-[40%] px-2 min-[375px]:px-10 py-10 gap-10 rounded-[2rem]">
+    <section className="relative px-10 xl:px-28 mt-20">
+      <div className="mx-auto flex flex-col lg:flex-row bg-subs w-full xl:w-[90%] 2xl:w-[70%] min-[2050px]:w-[50%] min-[2624px]:w-[40%] px-2 min-[375px]:px-10 py-10 gap-10 rounded-[2rem]">
         <div id="left" className="hidden xl:grid grid-rows-2 grid-cols-2 gap-4">
           <img
             src={ready4}

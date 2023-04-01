@@ -19,10 +19,7 @@ export default function Article() {
       <button className="text-white mt-6 text-[10px] xl:text-base items-center  mr-1 px-4 py-2 xl:px-5 xl:py-3 rounded-3xl bg-primary font-semibold flex justify-center gap-2">
         More Article
       </button>
-      <div
-        className="pt-8 w-full flex flex-col xl:grid grid-flow-col grid-rows-4
-        grid-cols-2 gap-7"
-      >
+      <div className="pt-8 w-full flex flex-col xl:grid grid-flow-col grid-rows-3 gap-7">
         {highlightArticle.map((item, index) => {
           return <ArticleCard key={index} {...item} index={index} />;
         })}
